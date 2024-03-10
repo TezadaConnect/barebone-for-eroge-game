@@ -45,7 +45,6 @@ public partial class ResultScreenSceneController : Node{
 		if(questionNumber > QuestionsCollection.QuestionCount() - 1){
 			questionNumber = 0;
 			mGameManager.SetScore(0);
-			mButton.Text = "Restart Game";
 		}
 		mGameManager.SetQuestionNumber(questionNumber);
 		mGameManager.SetQuestionModelByQuestionNumber();
